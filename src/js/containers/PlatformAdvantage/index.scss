@@ -1,0 +1,173 @@
+// tab
+.aboutTab {
+  border-top: 1px solid #E2E2E2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: .88rem;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  overflow: hidden;
+  height: .93rem;
+  li {
+    height: .92rem;
+    width: 33.3%;
+    text-align: center;
+    font-size: .28rem;
+    line-height: .92rem;
+    color: #666;
+    display: block;
+    margin-left: 0;
+    &.active {
+      color: #FB4D3A;
+      border-bottom: .04rem solid #FB4D3A;
+    }
+  }
+}
+
+.tabContent {
+  height: 100%;
+  // padding-top: 1.8rem;
+}
+
+.strength,
+.compliance,
+.industryLeader {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 .3rem;
+  h3 {
+    font-size: .36rem;
+    text-align: center;
+    line-height: .36rem;
+    margin: .4rem 0 .2rem;
+  }
+  .line {
+    width: .6rem;
+    height: .06rem;
+    background-color: #D8D8D8;
+    margin: 0 auto .4rem;
+  }
+}
+
+.strength1,
+.strength2,
+.strength3 {
+  width: 6.78rem;
+  height: 1.88rem;
+  border: 1px dashed #FD8275;
+  border-radius: .1rem;
+  display: flex;
+  justify-content: flex-start;
+  .icon1 {
+    width: 2.8rem;
+    // height: 1.88rem;
+    background: url('../../../images/tab/p1.png') no-repeat;
+    background-size: 100%;
+    margin-left: -.12rem;
+  }
+  .text {
+    margin-left: .2rem;
+    p {
+      font-size: .24rem;
+      line-height: .24rem;
+      color: #666;
+      &:first-child {
+        margin: .3rem 0 .2rem;
+      }
+      i {
+        font-size: .32rem;
+        line-height: .32rem;
+        color: #2A2A2A;
+      }
+    }
+  }
+}
+
+.strength2 {
+  border: 1px dashed #FBC574;
+  margin: .3rem 0;
+  .icon1 {
+    background: url('../../../images/tab/p2.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+// 综合实力
+.strength3 {
+  border: 1px dashed #B8E6E7;
+  margin-bottom: .4rem;
+  height: 2.18rem;
+  .icon1 {
+    background: url('../../../images/tab/p4.png') no-repeat;
+    background-size: 100%;
+  }
+  .text {
+    p {
+      &:first-child {
+        margin: .3rem 0 0;
+      }
+      &:nth-of-type(2) {
+        line-height: .48rem;
+      }
+    }
+  }
+}
+
+//专业合规
+.compliance {
+  margin-top: .16rem;
+  .compliance_bg {
+    height: 4rem;
+    width: 6.9rem;
+    margin: .4rem auto;
+    background: url('../../../images/tab/xzyhg1.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+//业内领先
+.industryLeader {
+  margin-top: .16rem;
+  margin-bottom: 8rem;
+  p {
+    font-size: .32rem;
+    line-height: .32rem;
+    color: #333;
+    margin: .2rem 0 .3rem;
+  }
+  .leader1,
+  .leader2,
+  .leader3 {
+    margin: 0;
+    color: #FB4D3A;
+    text-indent: .52rem;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      width: .32rem;
+      height: .32rem;
+      border-radius: 50%;
+      background: url('../../../images/tab/icon1.png') no-repeat;
+      background-size: 100%;
+      left: 0;
+    }
+  }
+  .leader2 {
+    &:after {
+      background: url('../../../images/tab/icon2.png') no-repeat;
+      background-size: 100%;
+    }
+  }
+  .leader3 {
+    &:after {
+      background: url('../../../images/tab/icon3.png') no-repeat;
+      background-size: 100%;
+    }
+  }
+
+}

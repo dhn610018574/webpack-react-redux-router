@@ -1,0 +1,169 @@
+.registerInfo{
+  background-color: #fff;
+  margin-top: .16rem;
+  height: 2.26rem;
+  position: relative;
+  input{
+    border: 0;
+    -webkit-appearance: none;
+    height: 1.12rem;
+    width: 100%;
+    line-height: 1.12rem;
+    font-size: .32rem;
+    padding: .4rem .3rem;
+    box-sizing: border-box;
+    display: block;
+  }
+  .tel{
+    color: #333;
+    border-bottom: 1px solid rgba(0 , 0 ,0,.1);
+  }
+  .smsCode{
+    color: #bbb;
+  }
+  .close{
+    width: .32rem;
+    height: .32rem;
+    background: url('../../../images/ic_clear.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: .4rem;
+    right: 2.56rem;
+  }
+  .smsBtn{
+    position: absolute;
+    top: .26rem;
+    right: .3rem;
+    width: 2rem;
+    height: .6rem;
+    border-radius: 2rem;
+    border: 1px solid #FBB203;
+    color: #F5A623;
+    font-size: .28rem;
+    line-height: .6rem;
+    text-align: center;
+  }
+}
+.registerProtocol{
+  display: flex;
+  justify-content: flex-start;
+  margin: .4rem 0 .4rem .3rem;
+  .checkBox{
+    display: inline-block;
+    vertical-align: middle;
+    width: .32rem;
+    height: .32rem;
+    background: url('../../../images/ic_red_checkbox_normal.png') no-repeat;
+    background-size: 100%;
+    margin-right: .2rem;
+  }
+  span.active{
+    background: url('../../../images/ic_red_checkbox_selected.png') no-repeat;
+    background-size: 100%;
+  }
+  .protocol{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .28rem;
+    line-height: .4rem;
+    color: #999;
+    a{
+      color: #FD8375;
+    }
+  }
+}
+.registerNextBtn{
+  height: .92rem;
+  width: 6.7rem;
+  margin: 0 auto;
+  line-height: .92rem;
+  text-align: center;
+  color: #fff;
+  border-radius: .1rem;
+  background-color: #FB4D3A;
+  font-size: .32rem;
+  margin-bottom: 6.66rem;
+}
+.logo{
+  width: 1.4rem;
+  height: .46rem;
+  background: url('../../../images/ic_crf_logo.png') no-repeat;
+  background-size: 100%;
+  margin: 3rem auto 0;
+}
+
+.toast{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.50);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  .sms{
+    width: 5.5rem;
+    height: 3.64rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1.82rem;
+    margin-left: -2.75rem;
+    padding: .3rem .3rem .4rem .4rem;
+    border-radius: .16rem;
+    h3{
+      font-size: .36rem;
+      line-height: .36rem;
+      color: #333;
+      text-align: center;
+    }
+    i{
+      width: .32rem;
+      height: .32rem;
+      position: absolute;
+      top: .3rem;
+      right: .3rem;
+      background: url('../../../images/close_pop.png') no-repeat;
+      background-size: 100%;
+    }
+    .picCode{
+      display: flex;
+      justify-content: space-between;
+      margin: .4rem 0;
+      input,div{
+        border: 0;
+        -webkit-appearance: none;
+        height: .88rem;
+        width: 2.1rem;
+      }
+      input{
+        display: block;
+        color: #999;
+        font-size: .28rem;
+        line-height: .88rem;
+        text-align: center;
+        border: 1px solid #EEEEEE;
+        border-radius: .1rem;
+      }
+      div{
+        img{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+    .submitBtn{
+      height: .8rem;
+      width: 4.7rem;
+      margin: 0 auto;
+      text-align: center;
+      line-height: .8rem;
+      color: #fff;
+      font-size: .32rem;
+      background-color: #FB4D3A;
+      border-radius: .1rem;
+    }
+  }
+}

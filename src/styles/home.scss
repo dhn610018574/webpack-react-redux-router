@@ -1,0 +1,67 @@
+.tab {
+  height: 1rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding-top: .1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  .bar {
+    font-size: .28rem;
+    text-align: center;
+    width: 25%;
+    padding-top: .5rem;
+  }
+}
+
+.tab .active {
+  color: #FB4D3A;
+}
+
+.tabContent .show {
+  display: block;
+}
+
+.tabContent .none {
+  display: none;
+}
+
+.tab .normal0 {
+  background: #fff url('../images/ic_home_normal.png') no-repeat top;
+  background-size: 25%;
+}
+
+.tab .normal1 {
+  background: #fff url('../images/ic_invest_normal.png') no-repeat top;
+  background-size: 25%;
+}
+
+.tab .normal2 {
+  background: #fff url('../images/ic_discovery_normal.png') no-repeat top;
+  background-size: 25%;
+}
+
+.tab .normal3 {
+  background: #fff url('../images/ic_mine_normal.png') no-repeat top;
+  background-size: 25%;
+}
+
+.tab .select0 {
+  background: #fff url('../images/ic_home_select.png') no-repeat top;
+  background-size: 25%;
+}
+.tab .select1 {
+  background: #fff url('../images/ic_invest_select.png') no-repeat top;
+  background-size: 25%;
+}
+.tab .select2 {
+  background: #fff url('../images/ic_discovery_select.png') no-repeat top;
+  background-size: 25%;
+}
+.tab .select3 {
+  background: #fff url('../images/ic_mine_select.png') no-repeat top;
+  background-size: 25%;
+}

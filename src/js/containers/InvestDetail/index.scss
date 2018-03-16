@@ -1,0 +1,221 @@
+  .investBtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: .96rem;
+    width: 100%;
+    z-index: 9999;
+    line-height: .96rem;
+    font-size: .32rem;
+    background-image: linear-gradient(90deg, #FF7F5C 0%, #FB4D3A 100%);
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.06);
+    text-align: center;
+    color: #fff;
+  } 
+  // 弹出层
+  .popup {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -.9rem;
+    left: 0;
+    z-index: 10001;
+    background-color: rgba(0, 0, 0, .5);
+    .mask {
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      bottom: -.9rem;
+      left: 0;
+      .mask_title {
+        height: .92rem;
+        font-size: .32rem;
+        line-height: .92rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        position: relative;
+        color: #333;
+        i {
+          position: absolute;
+          width: .3rem;
+          height: .3rem;
+          background: url('../../../images/close_pop.png') no-repeat;
+          background-size: 100%;
+          top: 50%;
+          right: .3rem;
+          margin-top: -.15rem;
+        }
+      }
+      .popContent {
+        padding-left: .3rem;
+        .hope {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: .3rem .94rem 0 .3rem;
+          span {
+            font-size: .24rem;
+            line-height: .24rem;
+            color: #666;
+            i {
+              margin-left: .2rem;
+              color: #333;
+            }
+          }
+        }
+        .residue {
+          font-size: .24rem;
+          color: #333;
+          line-height: .24rem;
+          text-align: center;
+          margin: .6rem 0 .3rem;
+          i {
+            color: #FB4D3A;
+            margin: 0 .06rem 0 .1rem;
+          }
+        }
+        .add {
+          width: 5.3rem;
+          height: .8rem;
+          margin: 0 auto;
+          display: flex;
+          justify-content: flex-start;
+          input {
+            outline: none;
+            background-color: none;
+            -webkit-appearance: none;
+            border-color: #fff;
+          }
+          input[type=number] {
+            -moz-appearance: textfield;
+          }
+          input[type=number]::-webkit-inner-spin-button,
+          input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          .minus,
+          .add {
+            width: 1.29rem;
+            height: .8rem;
+            background-color: #FEF0EC;
+            border: 1px solid #FB4D3A;
+          }
+          .minus {
+            border-radius: 92px 0 0 92px;
+            background: url('../../../images/minus.png') no-repeat center;
+            background-size: 35%;
+          }
+          .add {
+            border-radius: 0 92px 92px 0;
+            background: url('../../../images/add.png') no-repeat center;
+            background-size: 35%;
+          }
+          .num {
+            width: 2.71rem;
+            height: .8rem;
+            border-top: 1px solid #FB4D3A;
+            border-bottom: 1px solid #FB4D3A;
+            border-left: 0;
+            border-right: 0;
+            color: #333;
+            text-align: center;
+            font-size: .3rem;
+            line-height: .8rem;
+            border-radius: 0;
+          }
+        }
+        .expected {
+          color: #333;
+          font-size: .24rem;
+          line-height: .24rem;
+          text-align: center;
+          margin: .3rem 0;
+          i {
+            color: #FB4D3A;
+            margin: 0 .06rem 0 .1rem;
+          }
+        }
+        .chooseSpot {
+          height: .9rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+          border-top: 1px solid rgba(0, 0, 0, .1);
+          position: relative;
+          .icon {
+            height: .32rem;
+            width: .32rem;
+            background: url('../../../images/ic_coupon.png') no-repeat;
+            background-size: 100%;
+          }
+          .goSpot {
+            width: .24rem;
+            height: .24rem;
+            background: url('../../../images/ic_left_arrow.png') no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 50%;
+            right: .38rem;
+            margin-top: -.12rem;
+          }
+          p {
+            font-size: .3rem;
+            line-height: .3rem;
+            color: #333;
+            margin: 0 0 0 .3rem;
+          }
+        }
+        .agreement {
+          display: flex;
+          justify-content: flex-start;
+          padding: .3rem;
+          position: relative;
+          span:first-child {
+            display: inline-block;
+            vertical-align: middle;
+            width: .32rem;
+            height: .32rem;
+            border-radius: 50%;
+            background: url('../../../images/ic_red_checkbox_normal.png') no-repeat;
+            background-size: 100%;
+            margin-right: .2rem;
+            margin-top: .03rem;
+          }
+          span.active {
+            position: absolute;
+            top: .3rem;
+            left: 0;            
+            width: .32rem;
+            height: .32rem;
+            border-radius: 50%;
+            background: url('../../../images/ic_red_checkbox_selected.png') no-repeat;
+            background-size: 100%;
+          }
+          span:nth-of-type(2) {
+            display: inline-block;
+            vertical-align: middle;
+            color: #999;
+            font-size: .24rem;
+            line-height: .32rem;
+            margin-left: .2rem;
+            a {
+              color: #4b91e3;
+            }
+          }
+        }
+      }
+      .investBtn1 {
+        display: block;
+        height: .96rem;
+        width: 100%;
+        line-height: .96rem;
+        font-size: .32rem;
+        background-image: linear-gradient(90deg, #FF7F5C 0%, #FB4D3A 100%);
+        box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.06);
+        text-align: center;
+        color: #fff;
+      }
+    }
+  }

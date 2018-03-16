@@ -1,0 +1,25 @@
+.productDetail {
+  background-color: #f6f6f6;
+  width: 100%;
+  table {
+    width: 100%;
+    background-color: #fff;
+    font-size: .28rem;
+    line-height: .32rem;
+    color: #666;
+    td {
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      border-left: 1px solid rgba(0, 0, 0, .1);
+      ;
+      padding: .3rem;
+    }
+    td:nth-of-type(2n+1) {
+      width: 30%;
+      border-left: none;
+      padding: .3rem 0 0 .3rem;
+    }
+    tr:last-child {
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+  }
+}

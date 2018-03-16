@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "showTime": 1499937835000,
+            "updateTime": 1500284279000,
+            "hideTime": 2762328240000,
+            "sort": "2",
+            "title": "系统维护升级公告1",
+            "updateName": "Job",
+            "content": "APP定于20170710 23:30-2:50升级改造，升级期间不可出资、登录等操作，请各位客户提前做好出入金管理.",
+            "url": "https://www.crfchina.com/aboutUs/announcement/213.html?_=1499853685543",
+            "isHomepage": "1",
+            "publicTime": 1499671032000,
+            "createTime": 1499671038000,
+            "id": 2,
+            "createName": "Job",
+            "status": "1"
+        },
+        {
+            "showTime": 1499938834000,
+            "updateTime": 1500284285000,
+            "hideTime": 2762328240000,
+            "sort": null,
+            "title": "信而富借款用户突破2000w,成为业界第一家",
+            "updateName": null,
+            "content": "您好！16年风雨兼程，信而富一路走来。2001年起开展信贷分析服务业务，为多家银行等金融机构提供风险管理技术服务；2010年起涉足网络借贷信息中介服务；2017年4月28日在美国纽约证券交易所挂牌交易，成为2017年首家成功登陆纽交所的中国企业。截至2017年7月10日，平台累计撮合借款已突破2000万笔",
+            "url": "https://www.crfchina.com/aboutUs/announcement/213.html?_=1499853685543",
+            "isHomepage": "1",
+            "publicTime": 1499938834000,
+            "createTime": 1499938920000,
+            "id": 5,
+            "createName": "nodecms",
+            "status": "1"
+        }
+    ],
+    "message": "成功",
+    "result": "0000"
+}

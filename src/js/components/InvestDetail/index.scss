@@ -1,0 +1,396 @@
+//产品详情页头部
+.investDetailTitle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: .88rem;
+  z-index: 9997;
+  padding: 0 .3rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E2E2E2;
+  .back {
+    width: .4rem;
+    height: .4rem;
+    background: url('../../../images/goback.png') no-repeat;
+    background-size: 100%;
+  }
+  .product_title {
+    text-align: center;
+    .pro_name {
+      font-size: .3rem;
+      line-height: .3rem;
+      color: #333;
+      margin-bottom: .06rem;
+    }
+    .prefix {
+      font-size: .2rem;
+      color: #999;
+      line-height: .2rem;
+    }
+  }
+  .share {
+    width: .4rem;
+    height: .4rem;
+    background: url('../../../images/investDetail/zhuanfa.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+// 产品详情页产品介绍
+.productDetails {
+  background-color: #fff;
+  padding: 0 .3rem .52rem;
+  margin-top: .88rem;
+  overflow: hidden;
+  .timeAndTips {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .2rem;
+    .closeTime {
+      color: #666;
+      font-size: .24rem;
+      line-height: .24rem;
+    }
+    .tips {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      span {
+        height: .36rem;
+        border-radius: 1.12rem;
+        border: 1px solid #FF7A59;
+        font-size: .22rem;
+        color: #FF7A59;
+        text-align: center;
+        line-height: .2rem;
+        margin-left: .16rem;
+        padding: .06rem .12rem;
+      }
+    }
+  }
+  .hopeYearRate {
+    color: #FB4D3A;
+    font-size: .24rem;
+    line-height: .24rem;
+    margin: .4rem 0;
+    text-align: center;
+    .left,
+    .right {
+      display: inline-block;
+      vertical-align: middle;
+      height: .02rem;
+      width: 1.1rem;
+      background-image: linear-gradient(90deg, rgba(238, 238, 238, 0.00) 0%, #FF6A5A 100%);
+    }
+    .left {
+      margin-right: .1rem;
+    }
+    .right {
+      background-image: linear-gradient(-90deg, rgba(238, 238, 238, 0.00) 0%, #FF6A5A 100%);
+      margin-left: .1rem;
+    }
+  }
+  .yearRate {
+    text-align: center;
+    font-size: .72rem;
+    line-height: .72rem;
+    color: #FB4D3A;
+    margin-bottom: .66rem;
+    e {
+      font-size: .4rem;
+      line-height: .4rem;
+      margin-left: .1rem;
+    }
+  }
+  .investLimit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .6rem;
+    div {
+      width: 33.3%;
+      height: .58rem;
+      font-size: .24rem;
+      color: #333;
+      line-height: .24rem;
+      text-align: center;
+      border-right: .04rem solid rgba(171, 171, 171, 0.20);
+      &:last-child {
+        border: none;
+      }
+      p:first-child {
+        color: #ABABAB;
+        margin-bottom: .1rem;
+      }
+    }
+  }
+  .progress {
+    padding: 0 .6rem;
+    height: .52rem;
+    margin-bottom: .6rem;
+    .speed {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .24rem;
+      line-height: .24rem;
+      color: #ABABAB;
+      margin-bottom: .1rem;
+    }
+    .progressBar {
+      height: .08rem;
+      border-radius: 1.2rem;
+      background-image: linear-gradient(-180deg, #FCB88A 0%, #FF6A5A 100%);
+      .finished {
+        height: 100%;
+        width: 65%;
+        background-color: #E7E7E7;
+        border-radius: 1.2rem;
+      }
+    }
+  }
+  .investNum {
+    display: block;
+    font-size: .22rem;
+    color: #666;
+    text-align: center;
+    i {
+      color: #FB4D3A;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: .1rem;
+      margin-bottom: .05rem;
+      width: .12rem;
+      height: .24rem;
+      background: url('../../../images/investDetail/user.png') no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+//计划进度
+.planProgress {
+  height: 2.92rem;
+  padding: 0 .3rem;
+  background-color: #fff;
+  margin: .16rem 0;
+  overflow: hidden;
+  h4 {
+    font-size: .3rem;
+    line-height: .3rem;
+    color: #333;
+    margin: .3rem 0;
+    i {
+      width: .06rem;
+      height: .3rem;
+      background-color: #FB4F3B;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: .2rem;
+    }
+  }
+  .planStep {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .steps {
+      width: 33.3%;
+      position: relative;
+      .icon1,
+      .icon2,
+      .icon3 {
+        position: relative;
+        height: .8rem;
+        width: .8rem;
+        border-radius: 50%;
+        background-color: rgba(251, 97, 59, 0.09);
+        margin: 0 auto;
+        overflow: hidden;
+        div {
+          width: .4rem;
+          height: .46rem;
+          margin: .2rem auto 0;
+        }
+      }
+      .icon1 div {
+        background: url('../../../images/investDetail/start.png') no-repeat;
+        background-size: 100%;
+      }
+      .icon2 div {
+        background: url('../../../images/investDetail/match.png') no-repeat;
+        background-size: 100%;
+      }
+      .icon3 div {
+        background: url('../../../images/investDetail/end.png') no-repeat;
+        background-size: 100%;
+      }
+      p {
+        font-size: .22rem;
+        line-height: .22rem;
+        color: #333;
+        text-align: center;
+        &:nth-of-type(1) {
+          margin: .26rem 0 .1rem;
+        }
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 69%;
+        height: .02rem;
+        background-color: #EFEDEC;
+        top: .4rem;
+        left: 65%;
+      }
+      &:last-child {
+        &:after {
+          content: '';
+          position: absolute;
+          height: 0;
+        }
+      }
+    }
+  }
+}
+
+//安全等级和评测
+.safety {
+  background-color: #fff;
+  padding: .3rem .3rem 0;
+  overflow: hidden;
+  .safeLevel,
+  .investor {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    position: relative;
+    .stars {
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      .icon1 {
+        width: .28rem;
+        height: .32rem;
+        background: url('../../../images/investDetail/icon1.png') no-repeat;
+        background-size: 100%;
+      }
+      .itemName {
+        font-size: .24rem;
+        line-height: .24rem;
+        color: #333;
+        margin-left: .2rem;
+        margin-right: .1rem;
+      }
+      .starIcon {
+        display: flex;
+        justify-content: space-between;
+        span {
+          width: .28rem;
+          height: .26rem;
+          background: url('../../../images/investDetail/star.png') no-repeat;
+          background-size: 100%;
+          margin-right: .06rem;
+        }
+      }
+      a {
+        width: .12rem;
+        height: .22rem;
+        display: block;
+        background: url('../../../images/investDetail/user.png') no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        right: .1rem;
+      }
+    }
+  }
+  .investor {
+    border-bottom: none;
+    margin-top: .3rem;
+    .stars {
+      .icon1 {
+        background: url('../../../images/investDetail/icon2.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+  p {
+    font-size: .24rem;
+    line-height: .24rem;
+    color: #999;
+    margin: .3rem 0;
+    margin-left: .48rem;
+  }
+}
+
+//产品描述
+.description {
+  height: 2.6rem;
+  background-color: #fff;
+  margin-top: .16rem;
+  ul {
+    padding: 0 .3rem 0 .42rem;
+    li {
+      height: .84rem;
+      position: relative;
+      color: #333;
+      font-size: .24rem;
+      line-height: .84rem;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      >a {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      span {
+        width: .28rem;
+        height: .32rem;
+        position: absolute;
+        top: 50%;
+        left: -.41rem;
+        margin-top: -.16rem;
+        background: url('../../../images/investDetail/icon2.png') no-repeat;
+        background-size: 100%;
+      }
+      e {
+        height: .22rem;
+        width: .12rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -.11rem;
+        background: url('../../../images/investDetail/user.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(2) {
+        span {
+          background: url('../../../images/investDetail/icon4.png') no-repeat;
+          background-size: 100%;
+        }
+      }
+      &:nth-of-type(3) {
+        border-bottom: none;
+        span {
+          background: url('../../../images/investDetail/icon5.png') no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+  div {
+    height: 3.4rem;
+    overflow: hidden;
+    p {
+      color: #999;
+      font-size: .24rem;
+      line-height: .24rem;
+      margin-top: .6rem;
+      text-align: center;
+    }
+  }
+}

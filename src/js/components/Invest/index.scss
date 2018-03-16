@@ -1,0 +1,303 @@
+$main-color:#fff;
+body{
+  background-color: #f6f6f6;
+}
+//header
+.findHeader {
+  height: .88rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: .88rem;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  P {
+    line-height: .88rem;
+    text-align: center;
+    font-size: .34rem;
+    color: #333;
+  }
+  div {
+    position: absolute;
+    top: 0;
+    right: .28rem;
+    margin-top: .28rem;
+    width: .4rem;
+    height: .4rem;
+    background: url('../../../images/ic_discovery_customer_service.png') no-repeat;
+    background-size: 100%;
+  }
+}
+
+.investpanel {
+  border-top: 1px solid #eee;
+  height: 2.74rem;
+  background-color: #fff;
+  position: fixed;
+  top: .88rem;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  .plan {
+    height: 1.12rem;
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 25%;
+      text-align: center;
+      p {
+        font-size: .28rem;
+        color: #666;
+        line-height: .28rem;
+      }
+      .when_long {
+        font-size: .2rem;
+        color: #999;
+      }
+      .total {
+        line-height: 1.08rem;
+      }
+      .plan_name {
+        line-height: .28rem;
+        margin: .2rem 0;
+      }
+      .active {
+        color: #FB4D3A;
+        border-bottom: .04rem solid #FB4D3A;
+      }
+    }
+  }
+  .investLog {
+    height: .72rem;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    li {
+      height: .72rem;
+      padding: 0 .3rem;
+      margin-left: 0;
+      p {
+        font-size: .24rem;
+        color: #999;
+        line-height: .72rem;
+        i {
+          &:first-child {
+            color: #FF7E5B;
+          }
+          &:nth-of-type(2) {
+            margin: 0 .1rem;
+          }
+          &:last-child {
+            margin-left: .86rem;
+          }
+        }
+      }
+    }
+  }
+  .selectPanel {
+    height: .88rem;
+    padding: 0 .3rem;
+    display: flex;
+    .rate {
+      width: 20%;
+      height: 100%;
+      p {
+        font-size: .28rem;
+        color: #FB4D3A;
+        text-align: left;
+        line-height: .88rem;
+        i {
+          background: url('../../../images/ic_invest_arrow_up.png') no-repeat;
+          background-size: 100%;
+          width: .12rem;
+          height: .28rem;
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: .05rem;
+          margin-left: .1rem;
+        }
+      }
+    }
+    .remainDays {
+      width: 30%;
+      height: .88rem;
+      p {
+        font-size: .28rem;
+        color: #666;
+        text-align: center;
+        line-height: .88rem;
+        i {
+          background: url('../../../images/ic_invest_arrow_normal.png') no-repeat;
+          background-size: 100%;
+          width: .12rem;
+          height: .28rem;
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: .05rem;
+          margin-left: .1rem;
+        }
+      }
+    }
+    .payment{
+      width: 50%;
+      height: .88rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      div{
+        height: .4rem;
+        width: 1.4rem;
+        border:1px solid #979797;
+        border-radius: 2rem; 
+        font-size: .24rem;
+        line-height: .38rem;
+        text-align: center;
+        margin-left: .1rem;
+        &.active{
+          color: #FB4D3A;
+          border:1px solid #FB4D3A;
+          position: relative;
+          &:after{
+            content: 'X';
+            position: absolute;
+            width: .16rem;
+            height: .16rem;
+            right: .06rem;
+            top: 0;
+            color: #FB4D3A;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ncpProduct {
+  overflow: hidden; 
+  padding-left: .3rem;
+  background-color: $main-color;
+  margin-bottom: .16rem;
+  margin-top: .2rem;
+  padding-top: 3.4rem;
+  margin-bottom: 1rem;
+  h4 {
+    font-size: .3rem;
+    color: #333;
+    line-height: .3rem;
+    margin: .3rem 0 0;
+    font-weight: 700;
+  }
+  ul {
+    li {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      .product-introl {
+        box-sizing: border-box;
+        >div {
+          display: inline-block;
+          font-size: .24rem;
+          margin-bottom: .42rem;
+          &:nth-of-type(1) {
+            padding-right: .3rem;
+            box-sizing: border-box;
+            position: relative;
+            p:nth-of-type(1) {
+              font-size: .52rem;
+              color: #FB4D3A;
+              line-height: .42rem;
+              margin-top: .08rem;
+              i {
+                font-size: .4rem;
+                line-height: .32rem;
+              }
+            }
+            p:nth-of-type(2) {
+              font-size: .24rem;
+              line-height: .24rem;
+              margin-top: .2rem;
+              color: #999;
+            }
+            span {
+              display: block;
+              font-size: .2rem;
+              line-height: .2rem;
+              padding: .04rem;
+              border-radius: 2rem;
+              border: 1px solid #ffaf15;
+              color: #ffaf15;
+              float: right;
+              margin-bottom: .1rem;
+              margin-top: .08rem;
+              -webkit-animation: bglow .5s ease infinite;
+              @-webkit-keyframes bglow {
+                0% {
+                  color: #ffaf15;
+                  text-shadow: 0 0 10px;
+                }
+              }
+            }
+          }
+          &:nth-of-type(2) {
+            padding-left: .3rem;
+            box-sizing: border-box;
+            border-left: 1px solid rgba(251, 77, 58, 0.10);
+            p:nth-of-type(1) {
+              font-size: .3rem;
+              color: #333;
+              line-height: .3rem;
+              font-weight: 700;
+              margin-top: .08rem;
+              i{
+                width: .32rem;
+                height: .32rem;
+                background-color: #FD8375;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: .2rem;
+                color: #fff;
+                border-radius: .04rem;
+                text-align: center;
+                line-height: .32rem;
+                margin-left: .1rem;
+                margin-top: -.05rem;
+              }
+            }
+            p:nth-of-type(2) {
+              font-size: .24rem;
+              line-height: .24rem;
+              margin-top: .32rem;
+              span {
+                border-right: 1px solid #DDDDDD;
+                color: #999;
+                i {
+                  color: #FB4D3A;
+                }
+                &:nth-of-type(1) {
+                  padding-right: .1rem;
+                }
+                &:nth-of-type(2) {
+                  padding: 0 .1rem;
+                }
+                &:last-child {
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

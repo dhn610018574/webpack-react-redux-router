@@ -1,0 +1,179 @@
+.popup {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -.88rem;
+  left: 0;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, .5);
+  .mask {
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    .mask_title {
+      height: .92rem;
+      font-size: .32rem;
+      line-height: .92rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      position: relative;
+      color: #333;
+      i {
+        position: absolute;
+        width: .3rem;
+        height: .3rem;
+        background: url('../../../images/close_pop.png') no-repeat;
+        background-size: 100%;
+        top: 50%;
+        right: .3rem;
+        margin-top: -.15rem;
+      }
+    }
+    .popContent {
+      padding-left: .3rem;
+      .hope {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .3rem .94rem 0 .3rem;
+        span {
+          font-size: .24rem;
+          line-height: .24rem;
+          color: #666;
+          i {
+            margin-left: .2rem;
+            color: #333;
+          }
+        }
+      }
+      .residue {
+        font-size: .24rem;
+        color: #333;
+        line-height: .24rem;
+        text-align: center;
+        margin: .6rem 0 .3rem;
+        i {
+          color: #FB4D3A;
+          margin: 0 .06rem 0 .1rem;
+        }
+      }
+      .add {
+        width: 5.3rem;
+        height: .8rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        input {
+          outline: none;
+          background-color: none;
+          -webkit-appearance: none;
+          border-color: #fff;
+        }
+        .minus,
+        .add {
+          width: 1.29rem;
+          height: .8rem;
+          background-color: #FEF0EC;
+          border: 1px solid #FB4D3A;
+        }
+        .minus {
+          border-radius: 92px 0 0 92px;
+          background: url('../../../images/minus.png') no-repeat center;
+          background-size: 35%;
+        }
+        .add {
+          border-radius: 0 92px 92px 0;
+          background: url('../../../images/add.png') no-repeat center;
+          background-size: 35%;
+        }
+        .num {
+          width: 2.7rem;
+          height: .8rem;
+          border-top: 1px solid #FB4D3A;
+          border-bottom: 1px solid #FB4D3A;
+          border-left: 0;
+          border-right: 0;
+          color: #333;
+          text-align: center;
+          font-size: .3rem;
+          line-height: .8rem;
+          border-radius: 0;
+        }
+      }
+      .expected {
+        color: #333;
+        font-size: .24rem;
+        line-height: .24rem;
+        text-align: center;
+        margin: .3rem 0;
+        i {
+          color: #FB4D3A;
+          margin: 0 .06rem 0 .1rem;
+        }
+      }
+      .chooseSpot {
+        height: .9rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        position: relative;
+        .icon {
+          height: .32rem;
+          width: .32rem;
+          background: url('../../../images/ic_coupon.png') no-repeat;
+          background-size: 100%;
+        }
+        .goSpot {
+          width: .24rem;
+          height: .24rem;
+          background: url('../../../images/ic_left_arrow.png') no-repeat;
+          background-size: 100%;
+          position: absolute;
+          top: 50%;
+          right: .38rem;
+          margin-top: -.12rem;
+        }
+        p {
+          font-size: .3rem;
+          line-height: .3rem;
+          color: #333;
+          margin: 0 0 0 .3rem;
+        }
+      }
+      .agreement {
+        display: flex;
+        justify-content: flex-start;
+        padding: .3rem;
+        span:first-child {
+          display: inline-block;
+          vertical-align: middle;
+          width: .32rem;
+          height: .32rem;
+          border-radius: 50%;
+          background: url('../../../images/ic_red_checkbox_normal.png') no-repeat;
+          background-size: 100%;
+          margin-right: .2rem;
+          margin-top: .03rem;
+          &.active {
+            background: url('../../../images/ic_red_checkbox_selected.png') no-repeat;
+            background-size: 100%;
+          }
+        }
+        span:nth-of-type(2) {
+          display: inline-block;
+          vertical-align: middle;
+          color: #999;
+          font-size: .24rem;
+          line-height: .32rem;
+          a {
+            color: #4b91e3;
+          }
+        }
+      }
+    }
+  }
+}

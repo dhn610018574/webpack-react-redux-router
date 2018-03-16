@@ -1,0 +1,95 @@
+.topBanner{
+  height: 4.1rem;
+  background: url('../../../images/bg_login_top.png') no-repeat;
+  background-size: 100%;
+  position: relative;
+  .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.3rem;
+    height: 1.36rem;
+    margin-top: -.65rem;
+    margin-left: -.65rem;
+    z-index: 10;
+    background: url('../../../images/ic_logo_white.png') no-repeat;
+    background-size: 100%;
+  }
+  .backBtn{
+    width: .4rem;
+    height: .4rem;
+    position: absolute;
+    top: .62rem;
+    left: .3rem;
+    background: url('../../../images/ic_back_white.png') no-repeat;
+    background-size: 100%;
+  }
+}
+.userInfo{
+  background-color: #fff;
+  padding: .4rem .4rem .4rem;
+  position: relative;
+  input{
+    display: block;
+    height: 1.12rem;
+    -webkit-appearance: none;
+    border: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.10);
+    margin: 0 auto;
+    margin-bottom: .2rem;
+    width: 6.7rem;
+    padding: .4rem 0;
+    font-size: .32rem;
+    color: #bbb;
+    line-height: 1.12rem;
+    text-indent: .84rem;
+  }
+  .name{
+    background: url('../../../images/home_name.png') no-repeat left center;
+    background-size: .44rem .44rem;
+    padding-right: .4rem;
+  }
+  .psw{
+    background: url('../../../images/home_psw.png') no-repeat left center;
+    background-size: .44rem .44rem;
+  }
+  .hiddenBtn{
+    position: absolute;
+    display: block;
+    width: .44rem;
+    height: .44rem;
+    top: .72rem;
+    right: .4rem;
+    background: url('../../../images/ic_clear.png') no-repeat;
+    background-size: 100%;
+  }
+  .loginBtn{
+    height: .92rem;
+    width: 6.7rem;
+    line-height: .92rem;
+    color: #fff;
+    font-size: .32rem;
+    border: 0;
+    background-color: #FB4D3A;
+    border-radius: .1rem;
+    text-align: center;
+    margin: .7rem auto .6rem;
+  }
+  .userSet{
+    display: flex;
+    justify-content: space-between;
+    a{
+      display: block;
+      font-size: .28rem;
+      color: #FD8375;
+      line-height: .28rem;
+    }
+  }
+  .logo{
+    width: 1.4rem;
+    height: .46rem;
+    background: url('../../../images/ic_crf_logo.png') no-repeat;
+    background-size: 100%;
+    margin: 3rem auto 0;
+  }
+}

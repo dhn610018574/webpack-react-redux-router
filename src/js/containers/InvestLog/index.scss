@@ -1,0 +1,44 @@
+.investLog {
+  background-color: #fff;
+}
+
+.logNum {
+  font-size: .26rem;
+  line-height: .66rem;
+  color: #999;
+  text-align: center;
+  height: .66rem;
+  background-color: #f5f5f5;
+  margin-top: -.16rem;
+  i {
+    color: #FB4D3A;
+  }
+}
+
+ul {
+  background-color: #fff;
+  li {
+    padding: 0 .3rem 0 0;
+    margin-left: .3rem;
+    height: 1.48rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    .tel,
+    .sum {
+      font-size: .3rem;
+      line-height: .3rem;
+      color: #333;
+      p {
+        margin: .3rem 0;
+      }
+      .time {
+        color: #999;
+      }
+    }
+    .sum {
+      font-weight: 700;
+    }
+  }
+}

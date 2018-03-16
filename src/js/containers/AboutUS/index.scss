@@ -1,0 +1,557 @@
+
+// tab
+.aboutTab {
+  border-top: 1px solid #E2E2E2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: .16rem;
+  position: fixed;
+  top: .88rem;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  overflow: hidden;
+  height: .93rem;
+  li {
+    height: .92rem;
+    width: 25%;
+    text-align: center;
+    font-size: .28rem;
+    line-height: .92rem;
+    color: #666;
+    display: block;
+    margin-left: 0;
+    &.active {
+      color: #FB4D3A;
+      border-bottom: .04rem solid #FB4D3A;
+    }
+  }
+}
+
+.tabContent {
+  height: 100%;
+  // padding-top: 1.8rem;
+  margin-top: .16rem;
+}
+
+// 公司简介
+.company {
+  height: 15.48rem;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 .3rem;
+  display: block;
+  h3 {
+    font-size: .36rem;
+    text-align: center;
+    line-height: .36rem;
+    margin: .4rem 0 .2rem;
+  }
+  .line {
+    width: .6rem;
+    height: .06rem;
+    background-color: #D8D8D8;
+    margin: 0 auto .4rem;
+  }
+  .market_poster {
+    height: 4rem;
+    width: 6.9rem;
+    margin: 0 auto;
+    background: url('../../../images/poster.png') no-repeat;
+    background-size: 100%;
+  }
+  p {
+    font-size: .32rem;
+    line-height: .52rem;
+    color: #333;
+  }
+  .njs {
+    font-size: .28rem;
+    text-align: center;
+    color: #666;
+    line-height: .28rem;
+    margin: .2rem 0;
+  }
+  video {
+    height: 4rem;
+    width: 6.9rem;
+    margin: .34rem auto .2rem;
+  }
+  .market_cheer {
+    font-size: .28rem;
+    text-align: center;
+    color: #666;
+    line-height: .28rem;
+    margin-top: -.3rem;
+  }
+}
+
+//企业荣誉
+.honor {
+  height: 34.48rem;
+  background-color: #fff;
+  margin: .16rem 0;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  h3 {
+    font-size: .36rem;
+    text-align: center;
+    line-height: .36rem;
+    margin: .4rem 0 .2rem;
+  }
+  .line {
+    width: .6rem;
+    height: .06rem;
+    background-color: #D8D8D8;
+    margin: 0 auto .4rem;
+  }
+  .left_content,
+  .right_content {
+    div {
+      width: 3.02rem;
+      height: .52rem;
+      background: url('../../../images/tab/red1.png') no-repeat;
+      background-size: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: .32rem;
+      line-height: .52rem;
+    }
+    p {
+      line-height: .44rem;
+      font-size: .28rem;
+      color: #333;
+    }
+  }
+  .left {
+    position: absolute;
+    height: 33.02rem;
+    width: 3.02rem;
+    top: 1.46rem;
+    left: .3rem;
+    .c1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .c2 {
+      position: absolute;
+      top: 15%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/yellow1.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .c3 {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/green1.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .c4 {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/green1.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .c5 {
+      position: absolute;
+      top: 60%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/green1.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .c6 {
+      position: absolute;
+      top: 75%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/blue1.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .c7 {
+      position: absolute;
+      top: 90%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/blue1.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+  .center {
+    height: 30.746rem;
+    width: .46rem;
+    background: url('../../../images/tab/time.png') no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .right {
+    position: absolute;
+    height: 28.02rem;
+    width: 3.02rem;
+    top: 3.98rem;
+    right: .3rem;
+    .r1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      div {
+        background: url('../../../images/tab/red2.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .r2 {
+      position: absolute;
+      top: 17.5%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/yellow2.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .r3 {
+      position: absolute;
+      top: 35%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/green2.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .r4 {
+      position: absolute;
+      top: 52.8%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/green2.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .r5 {
+      position: absolute;
+      top: 70.6%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/green2.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+    .r6 {
+      position: absolute;
+      top: 88.2%;
+      left: 0;
+      div {
+        background: url('../../../images/tab/blue2.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+// 精英团队
+.team {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 .3rem .3rem .3rem;
+  margin-bottom: .16rem;
+  display: block;
+  h3 {
+    font-size: .36rem;
+    text-align: center;
+    line-height: .36rem;
+    margin: .4rem 0 .2rem;
+  }
+  .line {
+    width: .6rem;
+    height: .06rem;
+    background-color: #D8D8D8;
+    margin: 0 auto .4rem;
+  }
+  h4 {
+    font-size: .32rem;
+    line-height: .32rem;
+    color: #333;
+  }
+  .team_icon {
+    width: 1.6rem;
+    height: .12rem;
+    background: url('../../../images/tab/underline.png') no-repeat;
+    background-size: 100%;
+  }
+  .partner {
+    height: 4rem;
+    width: 6.9rem;
+    margin: .3rem auto;
+    background: url('../../../images/tab/group.png') no-repeat;
+    background-size: 100%;
+  }
+  .wzy {
+    line-height: .52rem;
+    font-size: .32rem;
+    color: #333;
+    word-break: break-all;
+    margin-bottom: .6rem;
+  }
+  .team_icon1 {
+    width: 3.2rem;
+    height: .12rem;
+    background: url('../../../images/tab/underline.png') no-repeat;
+    background-size: 100%;
+  }
+  .introduction_text {
+    color: #666;
+    font-size: .32rem;
+    line-height: .32rem;
+    margin: .4rem 0;
+  }
+  .partner_introduction {
+    height: 23.6rem;
+    width: 100%;
+    background: url('../../../images/tab/holder.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    .partner1,
+    .partner2,
+    .partner3,
+    .partner4,
+    .partner5 {
+      padding-left: 0 .1rem;
+      .person_introl {
+        display: flex;
+        justify-content: space-between;
+        height: 2.4rem;
+        width: 6.9rem;
+        align-items: center;
+        .name {
+          display: block;
+          width: 2.82rem;
+          height: .8rem;
+          background: url('../../../images/tab/dname.png') no-repeat;
+          background-size: 100%;
+          color: #FB4D3A;
+          line-height: .8rem;
+          font-size: .32rem;
+          text-align: center;
+        }
+        .pic {
+          height: 1.8rem;
+          width: 1.8rem;
+          border-radius: 50%;
+          background: url('../../../images/tab/boss1.png') no-repeat;
+          background-size: 100%;
+          margin-right: .3rem;
+        }
+      }
+      p {
+        color: #333;
+        line-height: .52rem;
+        font-size: .28rem;
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          width: .1rem;
+          height: .1rem;
+          border-width: .1rem;
+          border-style: solid;
+          border-color: transparent transparent transparent red;
+          top: .14rem;
+          left: -.18rem;
+        }
+      }
+    }
+    .partner1 {
+      top: 0;
+      position: absolute;
+    }
+    .partner2 {
+      position: absolute;
+      top: 4.8rem;
+      left: 0;
+      .person_introl {
+        .pic {
+          margin-left: .3rem;
+          background: url('../../../images/tab/boss2.png') no-repeat;
+          background-size: 100%;
+        }
+      }
+      p {
+        padding-left: .15rem;
+        &:after {
+          left: 0;
+        }
+      }
+    }
+    .partner3 {
+      position: absolute;
+      top: 9.4rem;
+      left: 0;
+      .person_introl {
+        .pic {
+          background: url('../../../images/tab/boss3.png') no-repeat;
+          background-size: 100%;
+        }
+      }
+      p {
+        padding-left: .15rem;
+        &:after {
+          left: 0;
+        }
+      }
+    }
+    .partner4 {
+      position: absolute;
+      top: 13.46rem;
+      left: 0;
+      .person_introl {
+        .pic {
+          background: url('../../../images/tab/boss4.png') no-repeat;
+          background-size: 100%;
+          margin-left: .3rem;
+        }
+        .name {
+          background: url('../../../images/tab/lname.png') no-repeat;
+          background-size: 100%;
+          width: 3.34rem;
+          height: .8rem;
+        }
+      }
+      p {
+        padding-left: .15rem;
+        &:after {
+          left: 0;
+        }
+      }
+    }
+    .partner5 {
+      position: absolute;
+      top: 18.78rem;
+      left: 0;
+      .person_introl {
+        .pic {
+          background: url('../../../images/tab/boss5.png') no-repeat;
+          background-size: 100%;
+          margin-left: .3rem;
+        }
+      }
+      p {
+        padding-left: .15rem;
+        &:after {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+// 合作伙伴
+.bank {
+  background-color: #fff;
+  overflow: hidden;
+  display: block;
+  h3 {
+    font-size: .36rem;
+    text-align: center;
+    line-height: .36rem;
+    margin: .4rem 0 .2rem;
+    padding: 0 .3rem;
+  }
+  .line {
+    width: .6rem;
+    height: .06rem;
+    background-color: #D8D8D8;
+    margin: 0 auto .4rem;
+    padding: 0 .3rem;
+  }
+  .bank_text{
+    line-height: .52rem;
+    font-size: .32rem;
+    color: #666;
+    margin-bottom: .2rem;
+    padding: 0 .3rem;
+  }
+  .bank_logo{
+    background-color: #f6f6f6;
+    height: 11.52rem;
+    padding: 0 .3rem;
+    li{
+      width: 3.34rem;
+      height: 1.38rem;
+      float: left;
+      margin: .2rem 0 0 0;
+      &:nth-of-type(2n+1){
+        margin-right: .2rem;
+      }
+      &:nth-of-type(1){
+        background: url('../../../images/tab/bank1.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(2){
+        background: url('../../../images/tab/bank2.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(3){
+        background: url('../../../images/tab/bank3.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(4){
+        background: url('../../../images/tab/bank4.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(5){
+        background: url('../../../images/tab/bank5.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(6){
+        background: url('../../../images/tab/bank6.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(7){
+        background: url('../../../images/tab/bank7.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(8){
+        background: url('../../../images/tab/bank8.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(9){
+        background: url('../../../images/tab/bank9.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(10){
+        background: url('../../../images/tab/bank10.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(11){
+        background: url('../../../images/tab/bank11.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(12){
+        background: url('../../../images/tab/bank12.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(13){
+        background: url('../../../images/tab/bank13.png') no-repeat;
+        background-size: 100%;
+      }
+      &:nth-of-type(14){
+        background: url('../../../images/tab/bank14.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+body {
+  padding: 0 0 1rem;
+}
+
+.myHeader {
+  height: 4.6rem;
+  width: 100%;
+  background: url('../../../images/bg_mine_top.png') no-repeat;
+  background-size: 100%;
+  padding: 0 .4rem;
+  .avator {
+    span {
+      font-size: .3rem;
+      color: #fff;
+      line-height: .3rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: .2rem;
+    }
+    .photo {
+      display: inline-block;
+      vertical-align: middle;
+      width: .7rem;
+      height: .7rem;
+      border-radius: 50%;
+      background: url('../../../images/ic_avatar_default.png') no-repeat;
+      background-size: 100%;
+    }
+  }
+  .assets {
+    width: 100%;
+    .total_assets {
+      text-align: center;
+      font-size: .32rem;
+      line-height: .32rem;
+      color: #fff;
+      margin-left: .8rem;
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        background: url('../../../images/ic_assets_visible.png') no-repeat;
+        background-size: 100%;
+        height: .4rem;
+        width: .4rem;
+        margin-left: .4rem;
+      }
+    }
+    .sum {
+      font-size: .28rem;
+      color: #fff;
+      text-align: center;
+      margin-top: .1rem;
+      line-height: .4rem;
+      margin-bottom: .4rem;
+    }
+  }
+  .sum_detail {
+    width: 100%;
+    height: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    .cumulative,
+    .available {
+      width: 50%;
+      text-align: center;
+      p {
+        color: #fff;
+        font-size: .28rem;
+        line-height: .4rem;
+      }
+      .money {
+        margin-top: .1rem;
+      }
+    }
+  }
+}
+
+.recharge_cashIn {
+  height: 1.28rem;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: .76rem;
+    background-color: #eee;
+    top: .26rem;
+    left: 50%;
+    z-index: 10;
+  }
+  .cashIn,
+  .recharge {
+    width: 50%;
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-align: center;
+      font-size: .32rem;
+      line-height: 1.28rem;
+      color: #333;
+      .bg_cash {
+        width: .76rem;
+        height: .76rem;
+        display: inline-block;
+        vertical-align: middle;
+        background: url('../../../images/ic_withdraw.png') no-repeat;
+        background-size: 100%;
+        margin-right: .4rem;
+      }
+      .bg_recharge {
+        width: .76rem;
+        height: .76rem;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .4rem;
+        background: url('../../../images/ic_recharge.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.panel {
+  background-color: #fff;
+  padding: 0 .4rem 0 1.18rem;
+  margin: .2rem 0;
+  box-sizing: border-box;
+  ul {
+    width: 100%;
+    li {
+      height: .96rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+      &:last-child {
+        border: none;
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        text-align: left;
+        font-size: .32rem;
+        color: #333;
+        line-height: .96rem;
+        .icon1,.icon2,.icon3,.icon4,.icon5 {
+          position: absolute;
+          top: 50%;
+          left: -.78rem;
+          margin-top: -.24rem;
+          height: .48rem;
+          width: .48rem;
+        }
+        .icon1{
+          background: url('../../../images/ic_my_investment.png') no-repeat;
+          background-size: 100%;
+        }
+        .icon2 {
+          background: url('../../../images/ic_red_packet.png') no-repeat;
+          background-size: 100%;
+        }
+        .icon3 {
+          background: url('../../../images/ic_message_center.png') no-repeat;
+          background-size: 100%;
+        }
+        .icon4 {
+          background: url('../../../images/ic_my_service.png') no-repeat;
+          background-size: 100%;
+        }
+        .icon5 {
+          background: url('../../../images/ic_my_settings.png') no-repeat;
+          background-size: 100%;
+        }
+        .next {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: .24rem;
+          height: .24rem;
+          margin-top: -.12rem;
+          background: url('../../../images/ic_left_arrow.png') no-repeat;
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.banner {
+  height: 3.7rem;
+  width: 100%;
+  background: url('../../../images/newfits/fit_banner.png') no-repeat;
+  background-size: 100%;
+}
+
+.fit_flow {
+  background-color: #FB7842;
+  padding: 0 .3rem .5rem;
+  .flow1 {
+    height: 5.3rem;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    padding-top: .35rem;
+    margin-bottom: 1.12rem;
+    .flow_name {
+      width: 3.9rem;
+      height: .7rem;
+      background: url('../../../images/newfits/fit_title_bg.png') no-repeat;
+      background-size: 100%;
+      color: #BC5105;
+      font-weight: 700;
+      font-size: .32rem;
+      line-height: .7rem;
+      text-align: center;
+      position: absolute;
+      top: -.35rem;
+      left: 50%;
+      margin-left: -1.95rem;
+    }
+    .des {
+      font-size: .3rem;
+      line-height: .3rem;
+      text-align: center;
+      margin: .6rem 0 .4rem;
+      i {
+        color: #FB7842;
+        font-size: .4rem;
+      }
+    }
+    .flow_hb {
+      padding: 0 .6rem;
+      display: flex;
+      justify-content: space-between;
+      .hb_je {
+        height: 3rem;
+        width: 2.4rem;
+        background: url('../../../images/newfits/fit_hb.png') no-repeat;
+        background-size: 100%;
+        padding-top: 1.5rem;
+        p {
+          font-size: .24rem;
+          color: #fff;
+          line-height: .24rem;
+          text-align: center;
+          margin-bottom: .1rem;
+          e {
+            font-size: .7rem;
+          }
+        }
+      }
+    }
+    .flow_jf {
+      .hb_jf {
+        background: url('../../../images/newfits/fit_jf.png') no-repeat;
+        background-size: 100%;
+        width: 2rem;
+        height: 2rem;
+        margin: .4rem auto;
+      }
+      .jf {
+        font-size: .3rem;
+        line-height: .3rem;
+        color: #333;
+        text-align: center;
+        margin-bottom: .1rem;
+        e {
+          color: #FB7842;
+          font-size: .4rem;
+        }
+      }
+    }
+  }
+  .flow3 {
+    margin-bottom: 0;
+  }
+  h4 {
+    font-size: .32rem;
+    text-align: center;
+    line-height: .32rem;
+    color: #fff;
+    margin: .6rem 0;
+    i{
+      display: inline-block;
+      vertical-align: middle;
+      height: .4rem;
+      width: .76rem;
+      background: url('../../../images/newfits/fit_regular_bg.png') no-repeat;
+      background-size: 100%;
+      margin: .2rem;
+    }
+  }
+  .regular{
+    font-size: .28rem;
+    color: #fff;
+    line-height: .4rem;
+    margin-bottom: .1rem;
+  }
+}
