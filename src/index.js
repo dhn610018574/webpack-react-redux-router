@@ -4,6 +4,7 @@ import Routers from './js/Routers.jsx';
 import './styles/normalize.scss'
 import './styles/_base.scss'
 import './styles/home.scss'
+import './styles/resetAntd.scss'
 global.CRFFetch = require('./js/utils/ajax/index')
 global.CONFIGS = require('./js/config')
 global.LocalImg = require('./js/images')

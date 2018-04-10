@@ -2,12 +2,20 @@ import React, {Component} from 'react'
 import { Link } from 'react-router'
 import './index.scss'
 export default class MyHeader extends Component {
+    constructor(props){
+        super(props);
+    }
+    handleClick(){
+        if(this.props.goLogin){
+            this.props.goLogin();
+        }
+    }
     render() {
         return (
             <div className="myHeader">
               <div className='avator'>
                 <div className='photo'></div>
-                <span>点击登录</span>
+                <span onClick={this.handleClick.bind(this)}>点击登录</span>
               </div>
               <div className='assets'>
                 <p className='total_assets'>总资产(元)<i></i></p>

@@ -44,6 +44,12 @@
     line-height: 1.12rem;
     text-indent: .84rem;
   }
+  input::-webkit-input-placeholder{
+    color: #bbb;
+  }
+  input{
+    color: #333;
+  }
   .name{
     background: url('../../../images/home_name.png') no-repeat left center;
     background-size: .44rem .44rem;

@@ -11,49 +11,10 @@ export default class NcpProduct extends Component {
   }
   componentDidMount() {
     document.body.scrollTop = 0;
-    // this.getInitialData();
   }
   componentDidMount() {
     this.setState(response.data);
   }
-  // async getInitialData() {
-  //   const params = JSON.stringify({
-  //     uuid: "",
-  //     productListType: 1,
-  //     pageNumber: 1,
-  //     pageSize: 20
-  //   });
-  //   const headers = {
-  //     "Content-Type": "application/json;charset=UTF-8",
-  //     "version-code": "49",
-  //     packageName: "com.crfchina.purseTest",
-  //     mobileOs: "IOS",
-  //     deviceno: "AC1B61A3-F77D-4AA7-BE79-890ABAC41631",
-  //     clientId: "",
-  //     customerUid: "",
-  //     mchntNo: "",
-  //     accessToken: ""
-  //   };
-  //   const ncpProductPath = `${CONFIGS.investmentPath}/product/list`;
-  //   try {
-  //     const fetchPromise = CRFFetch.Post(ncpProductPath);
-  //     const result = await fetchPromise;
-  //     if (result && !result.response) {
-  //       this.setState(result);
-  //     }
-  //   } catch (error) {
-  //     CRFFetch.handleError(error, Toast, () => {
-  //       if (error.status === 400) {
-  //         error.body.then(data => {
-  //           Toast.info(data.message);
-  //         });
-  //       }
-  //     });
-  //   }
-  // }
-  // setStatus(result) {
-  //   this.setState(result);
-  // }
   render() {
     let linkUrl = "/investDetail";
     return (

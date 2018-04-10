@@ -6,16 +6,19 @@ export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobilePhone: "请输入手机号",
-      password: "请输入密码"
+      mobilePhone: "",
+      password: "",
+      placeholder:{
+        mobilePhone: "请输入手机号",
+        password: "请输入密码",
+      }
     };
   }
   componentWillMount() {
-    this._loadMobilePhone();
+
   }
   componentDidMount() {
     document.body.scrollTop = 0;
-    this.mobilePhone.focus();
   }
   handleMobilePhoneChange(event) {
     this.setState({
@@ -29,32 +32,23 @@ export default class Login extends Component {
   }
   clearInputVal() {
     this.setState({
-      mobilePhone: "请输入手机号"
-    });
+      mobilePhone:''
+    })
+    this.mobilePhone.focus();
   }
-  handleMobilePhoneBlur(event) {
-    this._saveMobilePhone(event.target.value);
-  }
-  _saveMobilePhone(mobilePhone) {
-    localStorage.setItem("mobilePhone", mobilePhone);
-  }
-  _loadMobilePhone() {
-    const mobilePhone = localStorage.getItem("mobilePhone");
-    if (mobilePhone) {
-      this.setState({
-        mobilePhone
-      });
-    }
-  }
-  onSubmit(event) {
+  onSubmit() {
     const mobilePhone = this.state.mobilePhone;
     const password = this.state.password;
-    if (mobilePhone === '请输入手机号') {
-      Toast.info("请输入手机号");
+    console.log(mobilePhone,password)
+    if (mobilePhone === '') {
+      Toast.info("请输入手机号",2);
     }
-    if (password ==='请输入密码') {
-      Toast.info("请输入密码");
+    if (password ==='') {
+      Toast.info("请输入密码",2);
     }
+  }
+  backBtnClick(){
+    history.go(-1);
   }
   render() {
     let mobilePhone = this.state.mobilePhone;
@@ -63,22 +57,22 @@ export default class Login extends Component {
       <div className="login">
         <header className="topBanner">
           <div className="logo" />
-          <div className="backBtn" />
+          <div className="backBtn" onClick={this.backBtnClick.bind(this)}/>
         </header>
         <form className="userInfo">
           <input
             type="tel"
             className="name"
+            value={this.state.mobilePhone}
+            placeholder={this.state.placeholder.mobilePhone}
             ref={mobilePhone => (this.mobilePhone = mobilePhone)}
             onChange={this.handleMobilePhoneChange.bind(this)}
-            value={mobilePhone}
-            onBlur={this.handleMobilePhoneBlur.bind(this)}
           />
           <input
             type="password"
             className="psw"
-            value={password}
-            placeholder={password}
+            value={this.state.password}
+            placeholder={this.state.placeholder.password}
             onChange={this.handlePassWordChange.bind(this)}
           />
           <div className="hiddenBtn" onClick={this.clearInputVal.bind(this)} />
